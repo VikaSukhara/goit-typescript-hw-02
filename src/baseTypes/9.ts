@@ -1,8 +1,22 @@
 /*
   Створіть новий тип даних, який підходить для цих двох об'єктів.
 */
+type Bool = 'close' | 'open'
 
-const page1 = {
+type Data = {
+  title: string,
+  likes: number,
+  accounts: string[],
+  status: Bool,
+  details?: {
+    createAt: Date;
+    updateAt: Date;
+  };
+}
+
+
+
+const page1: Data = {
   title: 'The awesome page',
   likes: 100,
   accounts: ['Max', 'Anton', 'Nikita'],
@@ -13,11 +27,15 @@ const page1 = {
   }
 }
 
-const page2 = {
+const page2: Data = {
   title: 'Python or Js',
   likes: 5,
   accounts: ['Alex'],
   status: 'close',
 }
+
+
+
+
 
 export {};
