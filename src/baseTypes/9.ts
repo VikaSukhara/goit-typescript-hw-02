@@ -15,7 +15,6 @@ type Data = {
 }
 
 
-
 const page1: Data = {
   title: 'The awesome page',
   likes: 100,
